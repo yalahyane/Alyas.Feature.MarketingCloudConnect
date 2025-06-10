@@ -252,14 +252,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\MarketingCloudConnect\Alyas.Feature.MarketingCloudConnect.config" />
+    <Content Include="Scripts\Feature\MarketingCloudConnect\PageViewTracker.js" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\TrackingController.cs" />
     <Compile Include="Gateways\IMarketingCloudGateway.cs" />
     <Compile Include="Gateways\MarketingCloudGateway.cs" />
     <Compile Include="Models\DataExtensionItem.cs" />
     <Compile Include="Models\DataExtensionKeys.cs" />
     <Compile Include="Models\GetDataExtensionsResponse.cs" />
+    <Compile Include="Models\TrackEventRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceConfigurators\MarketingCloudConnectServiceConfigurator.cs" />
     <Compile Include="Services\ITrackingService.cs" />
@@ -274,6 +277,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
